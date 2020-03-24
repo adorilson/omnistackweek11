@@ -30,6 +30,11 @@ app.use(express.json());
  *  
  */
 
+ /**
+  * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+  * NoSQL: MongoDB, CouchDB, etc...
+  */
+
 app.post('/users', (request, response) => {
 
     const params = request.body;
@@ -38,7 +43,7 @@ app.post('/users', (request, response) => {
 
     return response.json({
         evento: 'Semana OmniStack 11.0',
-        aluno: 'Adorilson Bezerra'
+        aluno: 'Aldiene Bezerra'
     });
 });
 
