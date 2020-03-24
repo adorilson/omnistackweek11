@@ -1,9 +1,6 @@
 const express = require('express');
 
-const app = express();
-
-// necessário para a aplicação entender json no corpo das requisicoes
-app.use(express.json());
+const routes = express.Router();
 
 /**
  * Rota / Recurso 
@@ -30,12 +27,7 @@ app.use(express.json());
  *  
  */
 
- /**
-  * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
-  * NoSQL: MongoDB, CouchDB, etc...
-  */
-
-app.post('/users', (request, response) => {
+routes.post('/users', (request, response) => {
 
     const params = request.body;
 
@@ -47,4 +39,4 @@ app.post('/users', (request, response) => {
     });
 });
 
-app.listen(3333);
+module.exports = routes 
