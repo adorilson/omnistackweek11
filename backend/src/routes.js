@@ -6,6 +6,8 @@ const IncidentController = require('./controllers/IncidentController');
 
 const ProfileController = require('./controllers/ProfileController');
 
+const SessionController = require('./controllers/SessionController');
+
 
 const routes = express.Router();
 
@@ -33,6 +35,8 @@ const routes = express.Router();
  *      acessados com request.body
  *  
  */
+
+routes.post('/sessions', SessionController.create);
 
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.create);
