@@ -25,3 +25,21 @@ yarn-error.log*
 
 # sqlite database
 **/*.sqlite
+
+## mobile app
+mobile/node_modules/**/*
+mobile/.expo/*
+mobile/npm-debug.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.orig.*
+mobile/web-build/
+mobile/web-report/
+
+# macOS
+mobile/.DS_Store
+
+## end mobile app
